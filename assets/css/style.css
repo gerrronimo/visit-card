@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;900&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;900&display=swap');
 
 * {
     padding: 0;
@@ -10,7 +10,6 @@
     cursor: none;
     user-select: none;
 
-    /*font-family: 'Playfair Display', serif;*/
     font-family: 'HelveticaNeueCyr', serif;
     box-sizing: border-box;
 }
@@ -64,8 +63,8 @@ header {
 }
 
 .headerBtnImg {
-    width: 25px;
-    height: 25px;
+    font-size: 25px;
+    color: #fff;
 
     margin-left: 25px;
 }
@@ -116,6 +115,7 @@ main {
 .productDesk {
     width: 250px;
     height: 250px;
+    padding: 15px;
     top: 35%;
     left: 85%;
 
@@ -127,7 +127,7 @@ main {
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
 
     box-shadow: 0 0 20px -4px rgba(0,0,0,0.3);
     border: 1px solid #cb7b70;
@@ -213,6 +213,7 @@ main {
 .componentDesk {
     width: 250px;
     height: 250px;
+    padding: 15px;
     margin: 0 2.5vw;
 
     background: #DFB468;
@@ -222,7 +223,7 @@ main {
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
 
     box-shadow: 0 0 20px -4px rgba(0,0,0,0.3);
     border: 1px solid #d2d2d2;
@@ -240,7 +241,7 @@ main {
     margin-top: 25px;
 }
 
-.componentLink p {
+.componentLinkDesk {
     color: #fff;
     margin-right: 15px;
 }
@@ -276,8 +277,14 @@ main {
 }
 
 .iconElem {
-    width: 25px;
-    height: 25px;
+    font-size: 40px;
+    color: #67b8ac;
+    transition: .1s linear;
+}
+
+.iconElem:hover {
+    color: #5d8e84;
+    transition: .1s linear;
 }
 
 /*bio*/
