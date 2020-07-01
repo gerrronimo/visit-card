@@ -34,7 +34,7 @@ body {
 
 header {
     padding: 40vh 15vw;
-    background: url("../images/bg.jpf") no-repeat center right;
+    background: url("../images/bg.jpg") no-repeat center right;
 
     display: flex;
     align-items: center;
@@ -184,18 +184,20 @@ main {
 }
 
 .component1 {
-    width: 35vw;
     height: 40vh;
-
-    background: url("../images/components2.jpf") center center no-repeat;
-    background-size: cover;
+    background-image: url("../images/components2.png");
 }
 
 .component2 {
-    width: 35vw;
     height: 45vh;
+    background-image: url("../images/components1.png");
+}
 
-    background: url("../images/components1.jpf") center center no-repeat;
+.component1,
+.component2 {
+    width: 35vw;
+    background-position: center center;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
