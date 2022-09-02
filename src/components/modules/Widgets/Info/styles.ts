@@ -1,4 +1,4 @@
-import {createUseStyles} from 'react-jss'
+import { createUseStyles } from 'react-jss'
 
 export const useStyles = createUseStyles({
   infoWidget: {
@@ -17,7 +17,7 @@ export const useStyles = createUseStyles({
 
   text: {
     fontSize: 20,
-    letterSpacing: 1.2,
+    letterSpacing: 1.15,
     lineHeight: '32px',
     color: '#232323',
     userSelect: 'none',
@@ -31,21 +31,22 @@ export const useStyles = createUseStyles({
 
   button: {
     position: 'absolute',
-    top: 32,
-    right: 32,
+    top: 0,
+    right: 0,
 
     color: '#000',
     letterSpacing: 1,
     outline: '3px solid rgb(240 242 248)',
     transition: '.15s linear',
 
-    padding: '12px 24px',
+    padding: '8px 16px',
     borderRadius: 16,
     textDecoration: 'none',
-    fontWeight: 500,
+    fontWeight: 400,
 
     '&:hover': {
-      outline: '8px solid rgb(240 242 248)',
+      background: 'rgb(240 242 248)',
+      outline: '6px solid rgb(240 242 248)',
       transition: '.15s linear'
     }
   }

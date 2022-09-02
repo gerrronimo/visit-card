@@ -6,7 +6,7 @@ import { WidgetNodeProps } from '../../../shared/Widget'
 
 import { useStyles } from "./styles";
 
-export interface InfoWidgetProps extends WidgetNodeProps {}
+export interface InfoWidgetProps extends WidgetNodeProps { }
 
 export const InfoWidget: FC<InfoWidgetProps> = (props) => {
   const classes = useStyles();

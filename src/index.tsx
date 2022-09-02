@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import {
@@ -17,18 +17,17 @@ const root = ReactDOM.createRoot(
 );
 
 root.render(
-  <React.StrictMode>
-    <div className="container">
-      <Router>
-        <Header />
+  <div className="container">
+    <Router>
+      <Header />
 
-        <Routes>
-          <Route path="/" element={ <Home /> } />
-          <Route path="/contact" element={ <Contact /> } />
-        </Routes>
-      </Router>
-    </div>
-  </React.StrictMode>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </Router>
+  </div>
+
 );
 
 reportWebVitals();

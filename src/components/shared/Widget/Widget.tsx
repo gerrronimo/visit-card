@@ -5,7 +5,7 @@ import { WidgetTypes, WidgetProps } from './types';
 
 import { useStyles } from "./styles";
 
-export const Widget: FC<WidgetProps> = ({type}) => {
+export const Widget: FC<WidgetProps> = ({ type }) => {
   const classes = useStyles();
 
   const smallWidget = useMemo(() => ({
@@ -34,21 +34,23 @@ export const Widget: FC<WidgetProps> = ({type}) => {
       widgetType: WidgetTypes.info,
       Component: InfoWidget,
       props: { ...mediumWidget },
-    },{
+      clsx: `${classes.widget} ${classes.widgetContainer}`,
+    }, {
       widgetType: WidgetTypes.map,
       Component: MapWidget,
       props: { ...smallWidget },
+      clsx: classes.widget,
     }
   ]), [smallWidget, mediumWidget, hugeWidget]);
 
   return (
     <>
       {widgets.map(
-        ({widgetType, Component, props}) => {
+        ({ widgetType, Component, props, clsx }) => {
           return type === widgetType && (
             <div
-              className={classes.widget}
-              style={{width: props.style.columns * 300, height: props.style.rows * 300}}
+              className={clsx}
+              style={{ width: props.style.columns * 300, height: props.style.rows * 300 }}
               key={widgetType}
             >
               <Component {...props} />

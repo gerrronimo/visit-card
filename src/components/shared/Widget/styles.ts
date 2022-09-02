@@ -1,4 +1,4 @@
-import {createUseStyles} from 'react-jss'
+import { createUseStyles } from 'react-jss'
 
 export const useStyles = createUseStyles({
   widget: {
@@ -7,9 +7,9 @@ export const useStyles = createUseStyles({
     background: '#fff',
     borderRadius: 32,
     margin: 16,
-
-    '& div': {
-      padding: 32,
-    }
   },
+
+  widgetContainer: {
+    padding: 32,
+  }
 })
