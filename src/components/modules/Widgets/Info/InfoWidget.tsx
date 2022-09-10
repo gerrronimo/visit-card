@@ -1,10 +1,10 @@
 import { FC } from 'react';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
+import { WidgetNodeProps } from '../../../shared/Widget';
+import { WidgetButton } from '../../../shared/WidgetButton';
 import memoji from './memoji.png';
-import { WidgetNodeProps } from '../../../shared/Widget'
-
-import { useStyles } from "./styles";
+import { useStyles } from './styles';
 
 export interface InfoWidgetProps extends WidgetNodeProps { }
 
@@ -20,7 +20,12 @@ export const InfoWidget: FC<InfoWidgetProps> = (props) => {
         Now working on commercial project and growing own startup.
       </p>
 
-      <Link className={classes.button} to="/bio">View full bio</Link>
+      <WidgetButton
+        type="text"
+        position='rightTop'
+      >
+        <Link to="/bio">View full bio</Link>
+      </WidgetButton>
     </div>
   )
 }
