@@ -1,16 +1,11 @@
-import React, { useEffect } from 'react';
-import ReactDOM from 'react-dom/client';
-import reportWebVitals from './reportWebVitals';
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-} from "react-router-dom";
-
-import { Home, Contact } from "./components/modules";
-import { Header } from "./components/shared";
-
 import './index.sass';
+
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
+import { Contact, Home } from './components/modules';
+import { Header } from './components/shared';
+import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
