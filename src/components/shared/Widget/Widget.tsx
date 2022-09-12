@@ -1,9 +1,9 @@
 import { FC, useMemo } from 'react';
 
-import { InfoWidget, MapWidget } from "../../modules/Widgets";
-import { WidgetTypes, WidgetProps } from './types';
-
-import { useStyles } from "./styles";
+import { InfoWidget, MapWidget } from '../../modules/Widgets';
+import { LinkWidget } from '../../modules/Widgets/Link';
+import { useStyles } from './styles';
+import { WidgetProps, WidgetTypes } from './types';
 
 export const Widget: FC<WidgetProps> = ({ type }) => {
   const classes = useStyles();
@@ -39,6 +39,17 @@ export const Widget: FC<WidgetProps> = ({ type }) => {
       widgetType: WidgetTypes.map,
       Component: MapWidget,
       props: { ...smallWidget },
+      clsx: classes.widget,
+    }, {
+      widgetType: WidgetTypes.link,
+      Component: LinkWidget,
+      props: { 
+        ...hugeWidget,
+        background: '#fff',
+        url: 'https://github.com/gerrronimo',
+        image: 'https://cdn-icons-png.flaticon.com/512/25/25231.png',
+        label: 'https://github.com/gerrronimo',
+      },
       clsx: classes.widget,
     }
   ]), [smallWidget, mediumWidget, hugeWidget]);

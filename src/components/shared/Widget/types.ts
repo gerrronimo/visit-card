@@ -1,6 +1,7 @@
 export enum WidgetTypes {
   info = 'info',
-  map = 'map'
+  map = 'map',
+  link = 'link'
 }
 
 export interface WidgetProps {
