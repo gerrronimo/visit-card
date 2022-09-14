@@ -1,13 +1,16 @@
 import { createUseStyles } from 'react-jss';
 
 export const useStyles = createUseStyles({
-  container: {
+  link: {
     width: '100%',
-    heigth: '100%',
+    height: '100%',
 
     display: 'flex',
+    flexDirection: 'column',
     justifyContent: 'center',
-    alignContent: 'center',
+    alignItems: 'center',
+
+    borderRadius: 32,
   },
 
   image: {
