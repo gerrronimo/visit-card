@@ -1,6 +1,9 @@
 export enum WidgetTypes {
   info = 'info',
-  map = 'map'
+  map = 'map',
+  gitHub_link = 'gh_link',
+  linkedIn_link = 'linkedIn_link',
+  instagram_link = 'instagram_link',
 }
 
 export interface WidgetProps {
