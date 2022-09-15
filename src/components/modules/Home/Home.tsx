@@ -1,8 +1,11 @@
 import { Widget, WidgetTypes } from '../../shared/Widget';
+import { useStyles } from './styles';
 
 export const Home = () => {
+  const classes = useStyles();
+
   return (
-    <section>
+    <section className={classes.section}>
       <Widget type={WidgetTypes.info} />
       <Widget type={WidgetTypes.map} />
 
