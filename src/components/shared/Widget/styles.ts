@@ -2,11 +2,10 @@ import { createUseStyles } from 'react-jss';
 
 export const useStyles = createUseStyles({
   widget: {
-    height: 'min-content',
-    width: 'min-content',
+    height: 'inherit',
+    width: 'inherit',
     background: '#fff',
     borderRadius: 32,
-    margin: 16,
     position: 'relative',
   },
 

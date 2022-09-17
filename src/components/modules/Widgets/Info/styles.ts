@@ -1,7 +1,11 @@
 import { createUseStyles } from 'react-jss';
 
 export const useStyles = createUseStyles({
-  infoWidget: {
+  Info: {
+    gridArea: 'Info',
+  },
+
+  infoWidget: {    
     position: 'relative',
     height: '100%',
 
