@@ -1,8 +1,18 @@
-import { Widget, WidgetTypes } from '../../shared/Widget';
+import { FC, useMemo } from 'react';
 
-export const Home = () => {
+import { Widget, WidgetTypes } from '../../shared/Widget';
+import { useStyles } from './styles';
+
+export const Home: FC = () => {
+  const classes = useStyles();
+
+  const layout = useMemo(() => (`
+    "${WidgetTypes.info} ${WidgetTypes.info} ${WidgetTypes.map} ${WidgetTypes.gitHub_link}"
+    "${WidgetTypes.instagram_link} ${WidgetTypes.linkedIn_link} . ."
+  `) , []);
+
   return (
-    <section>
+    <section className={classes.section} style={{gridTemplateAreas: layout}}>
       <Widget type={WidgetTypes.info} />
       <Widget type={WidgetTypes.map} />
 

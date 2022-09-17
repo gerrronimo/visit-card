@@ -1,14 +1,11 @@
 import { FC } from 'react';
 import { Link } from 'react-router-dom';
 
-import { WidgetNodeProps } from '../../../shared/Widget';
 import { WidgetButton } from '../../../shared/WidgetButton';
 import memoji from './memoji.png';
 import { useStyles } from './styles';
 
-export interface InfoWidgetProps extends WidgetNodeProps { }
-
-export const InfoWidget: FC<InfoWidgetProps> = (props) => {
+export const InfoWidget: FC = () => {
   const classes = useStyles();
 
   return (
