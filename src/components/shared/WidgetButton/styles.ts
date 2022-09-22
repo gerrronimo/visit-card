@@ -17,21 +17,7 @@ export const useStyles = createUseStyles({
     color: '#000',
     letterSpacing: 1,
     transition: '.15s linear',
-  },
 
-  icon: {
-    width: 32,
-    height: 32,
-    fontSize: 20,
-
-    '&:hover': {
-      background: 'rgb(240 242 248)',
-      transition: '.15s linear',
-    }
-  },
-
-  text: {
-    padding: '8px 16px',
     outline: '3px solid transparent',
 
     '&:hover': {
@@ -39,5 +25,15 @@ export const useStyles = createUseStyles({
       outline: '6px solid rgb(240 242 248)',
       transition: '.15s linear'
     }
+  },
+
+  icon: {
+    width: 32,
+    height: 32,
+    fontSize: 20,
+  },
+
+  text: {
+    padding: '8px 16px',
   }
 })

@@ -3,7 +3,7 @@ import { FC, ReactNode, useMemo } from 'react';
 import { useStyles } from './styles';
 
 export interface WidgetButtonProps {
-  position?: string
+  position?: WidgetButtonPositions | 'leftBottom' | 'leftTop' | 'rightBottom' | 'rightTop'
   callback?: () => void
 	children: ReactNode
 	type: 'icon' | 'text'
