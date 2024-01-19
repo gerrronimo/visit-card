@@ -1,13 +1,8 @@
 import React from 'react';
+import { RouterComponent } from './pages';
 
 function App() {
-    return (
-        <>
-            <header>header</header>
-            <main>main</main>
-            <footer>footer</footer>
-        </>
-    );
+    return <RouterComponent />;
 }
 
 export default App;

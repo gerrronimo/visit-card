@@ -1,5 +1,5 @@
 {
-    "name": "react-boilerplate",
+    "name": "visit-card",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
@@ -21,6 +21,7 @@
         "browserslist": "^4.18.1",
         "camelcase": "^6.2.1",
         "case-sensitive-paths-webpack-plugin": "^2.4.0",
+        "clsx": "^2.1.0",
         "css-loader": "^6.5.1",
         "css-minimizer-webpack-plugin": "^3.2.0",
         "dotenv": "^10.0.0",
@@ -48,6 +49,7 @@
         "react-dom": "^18.2.0",
         "react-jss": "^10.10.0",
         "react-refresh": "^0.11.0",
+        "react-router-dom": "^6.21.2",
         "resolve": "^1.20.0",
         "resolve-url-loader": "^4.0.0",
         "sass-loader": "^12.3.0",
@@ -149,7 +151,7 @@
         "@trivago/prettier-plugin-sort-imports": "^4.3.0",
         "husky": "^8.0.0",
         "lint-staged": "^15.2.0",
-        "prettier": "3.1.1"
+        "prettier": "^3.2.4"
     },
     "husky": {
         "pre-commit": "npm run check:ts && npm run check:lint && git add -A ."
