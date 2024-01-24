@@ -7,8 +7,6 @@ export const useStyles = createUseStyles({
         background: '#fff',
         border: '1px solid #F6F7F6',
         borderRadius: 36,
-        padding: 36,
         marginBottom: 16,
-        // margin: 8,
     },
 });

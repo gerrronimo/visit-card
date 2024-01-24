@@ -34,4 +34,9 @@ export const useStyles = createUseStyles({
         width: 680,
         // background: 'orange',
     },
+    activities: {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
 });

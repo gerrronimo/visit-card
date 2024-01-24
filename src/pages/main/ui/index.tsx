@@ -1,6 +1,6 @@
 import React, { FC, useLayoutEffect, useState } from 'react';
 import clsx from 'clsx';
-import { Experience } from 'src/features/experience';
+import { Activities } from 'src/features/activities/ui';
 import { Card } from 'src/widgets/card';
 import { useStyles } from './styles';
 
@@ -62,8 +62,9 @@ export const MainPage: FC = () => {
                         {/* <p>card</p> */}
                     </Card>
 
-                    <Card width={680} height={160}>
+                    <Card width={680} height={160} className={classes.activities}>
                         {/* <p>card</p> */}
+                        <Activities />
                     </Card>
                 </div>
 
