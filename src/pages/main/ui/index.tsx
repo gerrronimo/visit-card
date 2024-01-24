@@ -1,7 +1,9 @@
 import React, { FC, useLayoutEffect, useState } from 'react';
 import clsx from 'clsx';
+import githubLogo from 'src/assets/github.png';
 import { Activities } from 'src/features/activities/ui';
 import { LeetCode } from 'src/features/leetcode';
+import { Link } from 'src/features/link';
 import { Card } from 'src/widgets/card';
 import { useStyles } from './styles';
 
@@ -29,7 +31,6 @@ export const MainPage: FC = () => {
         setMobile(false);
 
         window.addEventListener('resize', onResize);
-
         return () => window.removeEventListener('resize', onResize);
     }, []);
 
@@ -72,7 +73,11 @@ export const MainPage: FC = () => {
 
                 <div className={clsx(classes.column, classes.column2)}>
                     <Card width={236} height={160}>
-                        {/* <p>card</p> */}
+                        <Link
+                            background="linear-gradient(to right, #434343 0%, black 100%)"
+                            url="https://github.com/gerrronimo"
+                            img={githubLogo}
+                        />
                     </Card>
 
                     <Card width={236} height={160}>
