@@ -1,6 +1,6 @@
 import React, { FC, useEffect, useState } from 'react';
 import Calendar from 'react-activity-calendar';
-import { getActivities } from '../model/thunk';
+import { getActivities } from '../api';
 import { useStyles } from './styles';
 
 interface IDay {

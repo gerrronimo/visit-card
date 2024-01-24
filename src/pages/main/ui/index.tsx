@@ -1,6 +1,7 @@
 import React, { FC, useLayoutEffect, useState } from 'react';
 import clsx from 'clsx';
 import { Activities } from 'src/features/activities/ui';
+import { LeetCode } from 'src/features/leetcode';
 import { Card } from 'src/widgets/card';
 import { useStyles } from './styles';
 
@@ -52,6 +53,7 @@ export const MainPage: FC = () => {
 
                     <Card width={332} height={204}>
                         {/* <p>card</p> */}
+                        <LeetCode />
                     </Card>
 
                     <Card width={332} height={204}>
