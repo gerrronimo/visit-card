@@ -2,6 +2,7 @@ import React, { FC, useLayoutEffect, useState } from 'react';
 import clsx from 'clsx';
 import githubLogo from 'src/assets/github.png';
 import { Activities } from 'src/features/activities/ui';
+import { Experience } from 'src/features/experience';
 import { LeetCode } from 'src/features/leetcode';
 import { Link } from 'src/features/link';
 import { Card } from 'src/widgets/card';
@@ -45,7 +46,7 @@ export const MainPage: FC = () => {
             >
                 <div className={clsx(classes.column, classes.column1)}>
                     <Card width={680} height={428}>
-                        {/* <Experience /> */}
+                        <Experience />
                     </Card>
 
                     <Card width={332} height={204}>
